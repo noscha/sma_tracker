@@ -1,4 +1,4 @@
-from enum import Enum, _not_given
+from enum import Enum
 
 import yfinance as yf
 import datetime
@@ -65,8 +65,4 @@ if __name__ == "__main__":
 
         print(f"{name}, has SMA of {sma}, last close of {last_close} and deviation of {deviation_in_percent}")
 
-
-
-    """
-    Ich arbeite mit einer Kombination aus 200SMA und 5SMA um Fehlsignale möglichst zu vermeiden. Erst wenn der 5SMA auch unter dem 200SMA liegt, wird verkauft und umgekeh
-    """
+        # TOD0 above 200 for buy, under for sell
